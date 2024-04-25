@@ -1,0 +1,15 @@
+﻿{
+	"content_scripts": [{
+		"matches": ["https://ccfolia.com/rooms/*"],
+		"js": ["scripts/main.js"]
+	}],
+	"description": "ココフォリアにてBGM切り替え時にそれをチャットに投稿する拡張機能です。",
+	"manifest_version": 3,
+	"name": "BGM Logger for CCFOLIA",
+	"web_accessible_resources": [{
+		"resources": ["scripts/insertScript.js"],
+		"matches": ["https://ccfolia.com/*"]
+	}],
+	"short_name": "BGM Logger",
+	"version": "1.0"
+}
